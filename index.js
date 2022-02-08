@@ -1,11 +1,17 @@
-const fs = require("fs");
-const generatePage = require("./src/page-template");
+// TODO: Include packages needed for this application
 
-// const pageHTML = generatePage(name, github);
+// TODO: Create an array of questions for user input
+const questions = [];
 
-// fs.writeFile("./index.html", pageHTML, (err) => {
-//   if (err) throw err;
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
 
-//   console.log("Portfolio complete! Check out index.html to see the output!");
-// });
-console.log(inquirer);
+// TODO: Create a function to initialize app
+function init() {}
+
+// Function call to initialize app
+init();
+
+const fs = require('fs');
+
+fs.writeFile()
