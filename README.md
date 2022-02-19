@@ -1,5 +1,7 @@
-# y
-  ![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://opensource.org/licenses/)"
+# yes
+  ## License:
+  
+  [![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://shields.io/)
 
   
 ## Table of Contents
@@ -9,7 +11,7 @@
 * [Installation](#installation)
 
 * [Usage](#usage)
-* [License](#license)
+* 
 
 * [Built With](#coding)
 
@@ -28,32 +30,30 @@
 * [Additional information](#date,#author,#email)
 
 ## Description
-y
+yes
 
 ## Installation
-y
+yes
 
 ## Usage
-y
+yes
 
-## License
-    
-    This project is licensed under the MPL 2.0 license.
+Look for the project under MPL 2.0
 
 ## Built With
-HTML
+HTML,CSS,Bootstrap
 
 ## Contribution
-y
+yes
 
 ## Testing
-y
+yes
 
 ## Image
-! [y](https://github.com/y)
+! [yes](https://github.com/yes)
 
 ## Video
-! [y](https://github.com/y)
+! [yes](https://github.com/yes)
 
 ## GitHub Link
 [undefined](https://github.com/undefined)
@@ -62,6 +62,6 @@ y
 [undefined](https://snugglesmcgee.github.io/undefined)
 
 ## Additional Information
-* Date: y
-* Author: y
-* Email: [y](mailto:user@example.com) 
+* Date: yes
+* Author: yes
+* Email: [yes](mailto:user@example.com) 

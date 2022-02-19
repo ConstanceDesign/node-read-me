@@ -85,6 +85,14 @@ const questions = [
       "BSD 3",
       "None of the above",
     ],
+    validate: (your_licence) => {
+      if (your_licence) {
+        return true;
+      } else {
+        console.log("Select a license for the project.");
+        return false;
+      }
+    },
   },
   // Built With
   {
@@ -250,9 +258,16 @@ const questions = [
 ];
 // Function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      return console.log(err);
+    }
+
+    console.log(
+      "Success! Check out your completed README.md to see the output."
+    );
+  });
 }
-console.log("Success! Check out your completed README.md to see the output!");
 
 // Function to initilize app
 function init() {
