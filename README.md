@@ -1,70 +1,7 @@
 # yes
-  ![GitHub license](https://img.shields.io/badge/license-Apache 2.0-blue.svg)
-  
-## Table of Contents
 
-* [Description](#description)
+// Function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
 
-* [Installation](#installation)
-
-* [Usage](#usage)
-* [License](#license)
-
-* [License](#license)
-
-* [Built With](#coding)
-
-* [Contribution](#contribution)
-
-* [Testing](#testing)
-
-* [Image](#image)
-
-* [Video](#video)
-
-* [GitHub Link](#github)
-
-* [Deployment Link](#deployment)
-
-* [Additional information](#date,#author,#email)
-
-## Description
-yes
-
-## Installation
-yes
-
-## Usage
-yes
-
-## License
-Apache 2.0
-## License
-    
-    This project is licensed under the Apache 2.0 license.
-
-## Built With
-Javascript,Node.js
-
-## Contribution
-yes
-
-## Testing
-yes
-
-## Image
-! [yes](<https://github.com/yes>)
-
-## Video
-! [yes](<https://github.com/yes>)
-
-## GitHub Link
-[undefined](<https://github.com/undefined>)
-
-## Deployment Link
-[undefined](<https://github.com/undefined>)
-
-## Additional Information
-Date: yes
-Author: yes
-Email: [yes](mailto:user@example.com) 
+## License:
+[![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)

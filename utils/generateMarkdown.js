@@ -1,35 +1,35 @@
-// Function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-  }
-  return "";
-}
-
-// Function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license !== "None") {
-    return `[License](#license)`;
-  }
-  return "";
-}
-
-// Function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license !== "None") {
-    return `## License
-    
-    This project is licensed under the ${license} license.`;
-  }
-  return "";
-}
-// Function to generate markdown for README
-
 function generateMarkdown(data) {
   return `# ${data.title}
+
+// Function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+
+## License:
+[![license](https://img.shields.io/badge/license-${data.license}-blue.svg)](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)`;
+
+  // Function that returns the license link
+  // If there is no license, return an empty string
+  function renderLicenseLink(license) {
+    if (license !== "None") {
+      return `[License](#license)`;
+    }
+    return "";
+  }
+
+  // Function that returns the license section of README
+  // If there is no license, return an empty string
+  function renderLicenseSection(license) {
+    if (license !== "None") {
+      return `## License
+    
+    This project is licensed under the ${license} license.`;
+    }
+    return "";
+  }
+  // Function to generate markdown for README
+
+  function generateMarkdown(data) {
+    return `# ${data.title}
   ${renderLicenseBadge(data.license)}
   
 ## Table of Contents
@@ -39,9 +39,8 @@ function generateMarkdown(data) {
 * [Installation](#installation)
 
 * [Usage](#usage)
-* ${renderLicenseLink(data.license)}
 
-* [License](#license)
+* [License](#license)${renderLicenseLink(data.license)}
 
 * [Built With](#coding)
 
@@ -94,9 +93,10 @@ ${data.test}
 [${data.deployment}](<https://github.com/${data.deployment}>)
 
 ## Additional Information
-Date: ${data.date}
-Author: ${data.author}
-Email: [${data.email}](mailto:user@example.com) `;
+* Date: ${data.date}
+* Author: ${data.author}
+* Email: [${data.email}](mailto:user@example.com) `;
+  }
 }
 
 module.exports = generateMarkdown;

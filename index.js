@@ -1,6 +1,7 @@
 // Declaring all of the Global requires
 // npm modules package
 const inquirer = require("inquirer");
+const path = require("path");
 // file system
 const fs = require("fs");
 // generateMarkdown.js code
