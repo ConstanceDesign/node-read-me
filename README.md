@@ -1,7 +1,5 @@
-# yes
-  ## License:
+# y
   
-  [![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://shields.io/)
 
   
 ## Table of Contents
@@ -30,30 +28,30 @@
 * [Additional information](#date,#author,#email)
 
 ## Description
-yes
+y
 
 ## Installation
-yes
+y
 
 ## Usage
-yes
+y
 
 Look for the project under MPL 2.0
 
 ## Built With
-HTML,CSS,Bootstrap
+HTML
 
 ## Contribution
-yes
+y
 
 ## Testing
-yes
+y
 
 ## Image
-! [yes](https://github.com/yes)
+! [y](https://github.com/y)
 
 ## Video
-! [yes](https://github.com/yes)
+! [y](https://github.com/y)
 
 ## GitHub Link
 [undefined](https://github.com/undefined)
@@ -62,6 +60,6 @@ yes
 [undefined](https://snugglesmcgee.github.io/undefined)
 
 ## Additional Information
-* Date: yes
-* Author: yes
-* Email: [yes](mailto:user@example.com) 
+* Date: y
+* Author: y
+* Email: [y](mailto:user@example.com) 
