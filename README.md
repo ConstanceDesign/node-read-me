@@ -41,7 +41,7 @@ yes
     This project is licensed under the MPL 2.0 license.
 
 ## Built With
-HTML,CSS,Bootstrap
+HTML,CSS
 
 ## Contribution
 yes
