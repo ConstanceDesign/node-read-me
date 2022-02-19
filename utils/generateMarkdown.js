@@ -35,27 +35,16 @@ function generateMarkdown(data) {
 ## Table of Contents
 
 * [Project Status](#status)
-
 * [Description](#description)
-
 * [Installation](#installation)
-
 * [Usage](#usage)
-
 * ${renderLicenseLink(data.license)}
-
 * [Built With](#coding)
-
 * [Contribution](#contribution)
-
 * [Testing](#test)
-
 * [Visuals](#visuals)
-
 * [GitHub Link](#github)
-
 * [Deployment Link](#deployment)
-
 * [Additional information](#date,#author,#email,#thanks)
 
 ## Project Status
@@ -88,7 +77,7 @@ ${data.visuals}
 [${data.github}](https://github.com/${data.github})
 
 ## Deployment Link
-[${data.deploy}](https://snugglesmcgee.github.io/${data.deploy})
+${data.deploy}
 
 ## Additional Information
 * Date: ${data.date}

@@ -261,12 +261,13 @@ const questions = [
   {
     type: "input",
     name: "thanks",
-    message: "Please enter your email address for people to contact you:",
+    message:
+      "Please enter acknowledgements to those who helped make this project happen!:",
     validate: (thanks_input) => {
       if (thanks_input) {
         return true;
       } else {
-        console.log("Please enter your email address.");
+        console.log("Please enter thanks to those who helped.");
         return false;
       }
     },
