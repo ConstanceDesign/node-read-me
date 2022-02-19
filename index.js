@@ -72,7 +72,7 @@ const questions = [
   },
   // Licensing
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
     message: "Select a license:",
     choices: [
@@ -85,14 +85,6 @@ const questions = [
       "BSD 3",
       "None of the above",
     ],
-    validate: (your_license) => {
-      if (your_license) {
-        return true;
-      } else {
-        console.log("Select a license or choose none of the above.");
-        return false;
-      }
-    },
   },
   // Built With
   {
@@ -258,15 +250,9 @@ const questions = [
 ];
 // Function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) => {
-    if (err) {
-      return console.log(err);
-    }
-    console.log(
-      "Success! Check out your completed README.md to see the output!"
-    );
-  });
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
+console.log("Success! Check out your completed README.md to see the output!");
 
 // Function to initilize app
 function init() {

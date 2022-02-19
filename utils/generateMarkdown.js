@@ -32,9 +32,6 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
   
-  ## About The Project
-  ${data.description}
-  
 ## Table of Contents
 
 * [Description](#description)
@@ -42,14 +39,13 @@ function generateMarkdown(data) {
 * [Installation](#installation)
 
 * [Usage](#usage)
-
-* [License](#license)${renderLicenseLink(data.license)}
+* ${renderLicenseLink(data.license)}
 
 * [Built With](#coding)
 
 * [Contribution](#contribution)
 
-* [Testing](#testing)
+* [Testing](#test)
 
 * [Image](#image)
 
@@ -84,16 +80,16 @@ ${data.contribution}
 ${data.test}
 
 ## Image
-! [${data.image}](<https://github.com/${data.image}>)
+! [${data.image}](https://github.com/${data.image})
 
 ## Video
-! [${data.video}](<https://github.com/${data.video}>)
+! [${data.video}](https://github.com/${data.video})
 
 ## GitHub Link
-[${data.github}](<https://github.com/${data.github}>)
+[${data.github}](https://github.com/${data.github})
 
 ## Deployment Link
-[${data.deployment}](<https://github.com/${data.deployment}>)
+[${data.deployment}](https://snugglesmcgee.github.io/${data.deployment})
 
 ## Additional Information
 * Date: ${data.date}
