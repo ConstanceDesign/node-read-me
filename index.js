@@ -93,10 +93,10 @@ const questions = [
       }
     },
   },
-  // Languages and Technologies
+  // Built With
   {
     type: "checkbox",
-    name: "technologies",
+    name: "coding",
     message: "Select the lanuguages and technologies used in this project:",
     choices: [
       "HTML",
@@ -114,11 +114,13 @@ const questions = [
       "ORM",
       "MVC",
     ],
-    validate: (your_license) => {
-      if (your_license) {
+    validate: (your_coding) => {
+      if (your_coding) {
         return true;
       } else {
-        console.log("Select a license or choose none of the above.");
+        console.log(
+          "Select any of the listed languages and technolgies used for this project."
+        );
         return false;
       }
     },
@@ -154,13 +156,13 @@ const questions = [
       }
     },
   },
-  // Images
+  // Image
   {
     type: "input",
     name: "image",
     message: "Enter an image link:",
-    validate: (your_test) => {
-      if (your_test) {
+    validate: (image_input) => {
+      if (image_input) {
         return true;
       } else {
         console.log("Enter an image link only if you have one");
@@ -173,8 +175,8 @@ const questions = [
     type: "input",
     name: "video",
     message: "Enter a video link:",
-    validate: (your_test) => {
-      if (your_test) {
+    validate: (video_input) => {
+      if (video_input) {
         return true;
       } else {
         console.log("Enter a video link only if you have one");
@@ -201,25 +203,11 @@ const questions = [
     type: "input",
     name: "link",
     message: "Enter the deployment link for this project. (Required)",
-    validate: (gitHub_input) => {
-      if (gitHub_input) {
+    validate: (deployment_input) => {
+      if (deployment_input) {
         return true;
       } else {
         console.log("You MUST enter a project deployed link to continue.");
-        return false;
-      }
-    },
-  },
-  // Author
-  {
-    type: "input",
-    name: "author",
-    message: "Please enter your name as the author:",
-    validate: (author_input) => {
-      if (author_input) {
-        return true;
-      } else {
-        console.log("Please enter your name.");
         return false;
       }
     },
@@ -234,6 +222,20 @@ const questions = [
         return true;
       } else {
         console.log("Please enter a date for this project.");
+        return false;
+      }
+    },
+  },
+  // Author
+  {
+    type: "input",
+    name: "author",
+    message: "Please enter your name as the author:",
+    validate: (author_input) => {
+      if (author_input) {
+        return true;
+      } else {
+        console.log("Please enter your name.");
         return false;
       }
     },

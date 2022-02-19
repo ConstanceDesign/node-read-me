@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
   return "";
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
@@ -16,7 +16,7 @@ function renderLicenseLink(license) {
   return "";
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
@@ -30,33 +30,73 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
   
 ## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contribution](#contribution)
-- [Testing](#testing)
-- [Additional Info](#additional-info)
 
-## Description:
+* [Description](#description)
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+* ${renderLicenseLink(data.license)}
+
+* [License](#license)
+
+* [Built With](#coding)
+
+* [Contribution](#contribution)
+
+* [Testing](#testing)
+
+* [Image](#image)
+
+* [Video](#video)
+
+* [GitHub Link](#github)
+
+* [Deployment Link](#deployment)
+
+* [Additional information](#date,#author,#email)
+
+## Description
 ${data.description}
-## Installation:
+
+## Installation
 ${data.installation}
-## Usage:
+
+## Usage
 ${data.usage}
-## License:
+
+## License
 ${data.license}
-${renderLicenseLink(data.license)}
-## Contribution:
+${renderLicenseSection(data.license)}
+
+## Built With
+${data.coding}
+
+## Contribution
 ${data.contribution}
-## Testing:
+
+## Testing
 ${data.test}
-## Github:
-- Github: [${data.github}](https://github.com/${data.github})
-## Contact information:
-- Email: [${data.email}](mailto:user@example.com) `;
+
+## Image
+! [${data.image}](<https://github.com/${data.image}>)
+
+## Video
+! [${data.video}](<https://github.com/${data.video}>)
+
+## GitHub Link
+[${data.github}](<https://github.com/${data.github}>)
+
+## Deployment Link
+[${data.deployment}](<https://github.com/${data.deployment}>)
+
+## Additional Information
+Date: ${data.date}
+Author: ${data.author}
+Email: [${data.email}](mailto:user@example.com) `;
 }
 
 module.exports = generateMarkdown;
