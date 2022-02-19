@@ -182,8 +182,8 @@ const questions = [
     type: "input",
     name: "gitHub",
     message: "Enter your GitHub Username: (Required)",
-    validate: (gitHub_input) => {
-      if (gitHub_input) {
+    validate: (githubInput) => {
+      if (githubInput) {
         return true;
       } else {
         console.log("Please enter your GitHub Username to continue.");
@@ -196,8 +196,8 @@ const questions = [
     type: "input",
     name: "link",
     message: "Enter the deployment link for this project. (Required)",
-    validate: (deployment_input) => {
-      if (deployment_input) {
+    validate: (deployInput) => {
+      if (deployInput) {
         return true;
       } else {
         console.log("You MUST enter a project deployed link to continue.");

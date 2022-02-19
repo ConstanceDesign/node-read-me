@@ -2,7 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)",
+  "GNU AGPLv3":
+    "[![License: GNU AGPLv3](https://img.shields.io/badge/License-GNUAGPLv3-blueviolet.svg)](https://https://opensource.org/licenses/AGPL-3.0)",
+  Unlicense:
+    "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-yellow.svg)](http://unlicense.org/)"`;
   }
   return "";
 }
@@ -31,6 +35,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
+
   
 ## Table of Contents
 
@@ -67,7 +72,6 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${data.license}
 ${renderLicenseSection(data.license)}
 
 ## Built With

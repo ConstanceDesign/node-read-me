@@ -1,5 +1,10 @@
 # yes
-  ![GitHub license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)",
+  "GNU AGPLv3":
+    "[![License: GNU AGPLv3](https://img.shields.io/badge/License-GNUAGPLv3-blueviolet.svg)](https://https://opensource.org/licenses/AGPL-3.0)",
+  Unlicense:
+    "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-yellow.svg)](http://unlicense.org/)"
+
   
 ## Table of Contents
 
@@ -36,7 +41,6 @@ yes
 yes
 
 ## License
-MPL 2.0
 ## License
     
     This project is licensed under the MPL 2.0 license.
@@ -65,4 +69,4 @@ yes
 ## Additional Information
 * Date: yes
 * Author: yes
-* Email: [yes](mailto:user@example.com) 
+* Email: [info@constance.design](mailto:user@example.com) 
