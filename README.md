@@ -1,6 +1,5 @@
 # y
-## License:
-[![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://shields.io)]
+  ![license](https://img.shields.io/badge/license-MIT-blue.svg)
   
 ## Table of Contents
 
@@ -37,11 +36,12 @@ y
 ## Usage
 y
 
-## License:
-MPL 2.0
+## License
+    
+    This project is licensed under the MIT license.
 
 ## Built With
-HTML
+Javascript,Git
 
 ## Contribution
 y
