@@ -1,5 +1,5 @@
 # yes
-  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)"
+  ![GitHub license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)
 
   
 ## Table of Contents
