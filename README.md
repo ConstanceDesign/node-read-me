@@ -1,5 +1,6 @@
 # y
-  ![GitHub license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)
+## License:
+[![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://shields.io)]
   
 ## Table of Contents
 
@@ -31,15 +32,13 @@
 y
 
 ## Installation
-yy
+y
 
 ## Usage
 y
 
-## License: 
-## License
-    
-    This project is licensed under the MPL 2.0 license.
+## License:
+MPL 2.0
 
 ## Built With
 HTML
