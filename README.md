@@ -42,7 +42,7 @@ This Node Generated README.md file is open to contributions.  Open up an Issue w
 To run tests, get the source code at git clone https://github.com/SnugglesMcGee/node-read-me.git, install dependencies, update information as needed, and use your Terminal to  see what your markdown will look like before adding, committing and pushing a copy to your local repository.  Only the final README.md output will be viewable on the frontend.
 
 ## Visuals
-Coming soon!
+https://user-images.githubusercontent.com/93297081/154822741-40be18a7-e38b-43f9-af39-2dccad954531.mp4
 
 ## GitHub Link
 [SnugglesMcGee](https://github.com/SnugglesMcGee)
