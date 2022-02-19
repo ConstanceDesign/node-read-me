@@ -1,5 +1,7 @@
 # y
+  ## License:
   
+  [![license](https://img.shields.io/badge/license-MPL 2.0-blue.svg)](https://shields.io/)
 
   
 ## Table of Contents
@@ -36,10 +38,12 @@ y
 ## Usage
 y
 
-Look for the project under MPL 2.0
+## License: 
+ Look for the project under MPL 2.0
+  
 
 ## Built With
-HTML
+HTML,CSS,Bootstrap
 
 ## Contribution
 y
@@ -54,7 +58,7 @@ y
 ! [y](https://github.com/y)
 
 ## GitHub Link
-[undefined](https://github.com/undefined)
+[SnugglesMcGee](https://github.com/SnugglesMcGee)
 
 ## Deployment Link
 [undefined](https://snugglesmcgee.github.io/undefined)
@@ -62,4 +66,4 @@ y
 ## Additional Information
 * Date: y
 * Author: y
-* Email: [y](mailto:user@example.com) 
+* Email: [info@constance.design](mailto:user@example.com) 

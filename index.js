@@ -188,10 +188,10 @@ const questions = [
   // Github Username
   {
     type: "input",
-    name: "gitHub",
+    name: "github",
     message: "Enter your GitHub Username: (Required)",
-    validate: (githubInput) => {
-      if (githubInput) {
+    validate: (github_input) => {
+      if (github_input) {
         return true;
       } else {
         console.log("Please enter your GitHub Username to continue.");
