@@ -1,10 +1,11 @@
 // Declaring all of the Global requires
-// npm modules package
+// Captures user input
 const inquirer = require("inquirer");
+// Interacts with file paths
 const path = require("path");
-// file system
+// File System
 const fs = require("fs");
-// generateMarkdown.js code
+// link to generateMarkdown.js file
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 console.log("Welcome to my README Generator");
@@ -24,6 +25,21 @@ const questions = [
         return true;
       } else {
         console.log("You MUST enter a project name to continue.");
+        return false;
+      }
+    },
+  },
+  // Project Status
+  {
+    type: "list",
+    name: "status",
+    message: "Enter the status this project:",
+    choices: ["Completed", "Slowed Down", "Stopped"],
+    validate: (your_status) => {
+      if (your_status) {
+        return true;
+      } else {
+        console.log("You MUST enter a description to continue.");
         return false;
       }
     },
@@ -157,30 +173,16 @@ const questions = [
       }
     },
   },
-  // Image
+  // Visuals
   {
     type: "input",
-    name: "image",
+    name: "visuals",
     message: "Enter an image link:",
-    validate: (image_input) => {
-      if (image_input) {
+    validate: (visual_input) => {
+      if (visual_input) {
         return true;
       } else {
         console.log("Enter an image link only if you have one");
-        return false;
-      }
-    },
-  },
-  // Video
-  {
-    type: "input",
-    name: "video",
-    message: "Enter a video link:",
-    validate: (video_input) => {
-      if (video_input) {
-        return true;
-      } else {
-        console.log("Enter a video link only if you have one");
         return false;
       }
     },
@@ -248,6 +250,20 @@ const questions = [
     message: "Please enter your email address for people to contact you:",
     validate: (email_input) => {
       if (email_input) {
+        return true;
+      } else {
+        console.log("Please enter your email address.");
+        return false;
+      }
+    },
+  },
+  // Acknowledgements
+  {
+    type: "input",
+    name: "thanks",
+    message: "Please enter your email address for people to contact you:",
+    validate: (thanks_input) => {
+      if (thanks_input) {
         return true;
       } else {
         console.log("Please enter your email address.");

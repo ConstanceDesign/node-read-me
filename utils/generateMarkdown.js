@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
   return "";
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
@@ -16,7 +16,7 @@ function renderLicenseLink(license) {
   return "";
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
@@ -27,12 +27,14 @@ function renderLicenseSection(license) {
   return "";
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
   
 ## Table of Contents
+
+* [Project Status](#status)
 
 * [Description](#description)
 
@@ -48,15 +50,16 @@ function generateMarkdown(data) {
 
 * [Testing](#test)
 
-* [Image](#image)
-
-* [Video](#video)
+* [Visuals](#visuals)
 
 * [GitHub Link](#github)
 
 * [Deployment Link](#deployment)
 
-* [Additional information](#date,#author,#email)
+* [Additional information](#date,#author,#email,#thanks)
+
+## Project Status
+${data.status}
 
 ## Description
 ${data.description}
@@ -78,11 +81,8 @@ ${data.contribution}
 ## Testing
 ${data.test}
 
-## Image
-! [${data.image}](https://github.com/${data.image})
-
-## Video
-! [${data.video}](https://github.com/${data.video})
+## Visuals
+${data.visuals}
 
 ## GitHub Link
 [${data.github}](https://github.com/${data.github})
@@ -93,7 +93,8 @@ ${data.test}
 ## Additional Information
 * Date: ${data.date}
 * Author: ${data.author}
-* Email: [${data.email}](mailto:user@example.com) `;
+* Email: [${data.email}](mailto:user@example.com)
+* Acknowledgements: ${data.thanks} `;
 }
 
 module.exports = generateMarkdown;
