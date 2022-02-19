@@ -204,8 +204,8 @@ const questions = [
     type: "input",
     name: "link",
     message: "Enter the deployment link for this project. (Required)",
-    validate: (your_deploy) => {
-      if (your_deploy) {
+    validate: (deploy_input) => {
+      if (deploy_input) {
         return true;
       } else {
         console.log("You MUST enter a project deployed link to continue.");
