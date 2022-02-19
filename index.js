@@ -158,7 +158,7 @@ const questions = [
   {
     type: "input",
     name: "image",
-    message: "Enter an image link.",
+    message: "Enter an image link:",
     validate: (your_test) => {
       if (your_test) {
         return true;
@@ -172,7 +172,7 @@ const questions = [
   {
     type: "input",
     name: "video",
-    message: "Enter a video link.",
+    message: "Enter a video link:",
     validate: (your_test) => {
       if (your_test) {
         return true;
